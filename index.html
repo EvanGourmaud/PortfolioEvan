@@ -1,636 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-
-    <title>Portfolio Evan Gourmaud</title>
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Portfolio Evan Gourmaud - Étudiant développeur à l'Institut G4 Lyon" />
+    <meta name="author" content="Evan Gourmaud" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-styletest_updated.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <link rel="icon" type="image/png" href="assets/images/ICO.webp">
-    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/ICO.webp" />
+    <title>Portfolio · Evan Gourmaud</title>
 
-  </head>
+    <style>
+   
+    </style>
+</head>
 
-  <body>
-    <div id="themeb">
-          <button class="theme-toggle" id="theme-btn">Mode sombre</button>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- ═══ TOP NAVBAR ═══ -->
+<nav id="topnav">
+    <a href="#section1" class="nav-brand">
+        <span class="nav-brand-dot"></span>
+        Evan Gourmaud
+    </a>
+
+    <ul class="nav-links main-menu">
+        <li><a href="#section1">À propos</a></li>
+        <li><a href="#section2">Formation</a></li>
+        <li><a href="#section3">Compétences</a></li>
+        <li><a href="#section4">Réalisations</a></li>
+        <li><a href="#section5">Hobbies</a></li>
+        <li><a href="#section6">CV</a></li>
+        <li><a href="#section7">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+        <a href="https://github.com/EvanGourmaud" target="_blank" rel="noopener" class="nav-social" title="GitHub">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="https://fr.linkedin.com/in/evan-gourmaud-4b81402aa" target="_blank" rel="noopener" class="nav-social" title="LinkedIn">
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <button id="theme-btn">☀️ Clair</button>
+        <div id="nav-burger" onclick="toggleDrawer()"><i class="fa fa-bars"></i></div>
     </div>
-    <div id="page-wraper">
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"><img src="assets/images/PP.jpg" alt="" class="pp"/></a>
-            </div>
-            <div class="author-content">
-              <h4>Evan Gourmaud</h4>
-              <span>Étudiant en BTS</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">Á propos de moi</a></li>
-                <li><a href="#section2">Formation</a></li>
-                <li><a href="#section3">Mes compétences</a></li>
-                <li><a href="#section4">Mes réalisations</a></li>
-                <li><a href="#section5">Mes hobbies</a></li>
-                <li><a href="#section6">CV</a></li>
-                <li><a href="#section7">Contactez-moi</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://github.com/EvanGourmaud" target="_blank"
-                    ><i class="fa fa-github"></i
-                  ></a>
-                </li>
+</nav>
 
-                <li>
-                  <a href="https://fr.linkedin.com/in/evan-gourmaud-4b81402aa?trk=people-guest_people_search-card" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </li>
-              </ul>
+<!-- Mobile drawer -->
+<div id="nav-drawer">
+    <ul class="main-menu">
+        <li><a href="#section1" onclick="closeDrawer()">À propos</a></li>
+        <li><a href="#section2" onclick="closeDrawer()">Formation</a></li>
+        <li><a href="#section3" onclick="closeDrawer()">Compétences</a></li>
+        <li><a href="#section4" onclick="closeDrawer()">Réalisations</a></li>
+        <li><a href="#section5" onclick="closeDrawer()">Hobbies</a></li>
+        <li><a href="#section6" onclick="closeDrawer()">CV</a></li>
+        <li><a href="#section7" onclick="closeDrawer()">Contact</a></li>
+    </ul>
+</div>
+
+<!-- ═══ CONTENT ═══ -->
+<div id="main-content">
+
+    <!-- À PROPOS -->
+    <section class="section content-section" id="section1" data-section="section1">
+        <div class="inner">
+
+            <div class="hero-wrap">
+                <div class="hero-photo-wrap">
+                    <img src="assets/images/PP.jpg" alt="Evan Gourmaud" class="hero-photo" />
+                    <div class="hero-ring"></div>
+                </div>
+                <div class="hero-text">
+                    <p class="hero-eyebrow">Bonjour, je suis</p>
+                    <h1 class="hero-name">Evan Gourmaud</h1>
+                    <p class="hero-role">Étudiant développeur · Institut G4 · Lyon</p>
+                    <p class="hero-bio">
+                        Passionné par le développement logiciel, j'ai choisi d'interrompre mon BTS SIO pour intégrer l'<strong>Institut G4 à Lyon</strong> — un Bac+3 dédié à la maîtrise des langages, architectures et méthodologies du génie logiciel. Mon ambition : concevoir des solutions robustes et scalables.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">HTML / CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">C / C++</span>
+                        <span class="tag">Réseaux</span>
+                        <span class="tag">VMware</span>
+                    </div>
+                </div>
             </div>
-            <div class="copyright-text">
+
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-n">4</span>
+                    <span class="stat-l">ans Bac Pro<br>Réseaux</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat">
+                    <span class="stat-n">3+</span>
+                    <span class="stat-l">projets web<br>déployés</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat">
+                    <span class="stat-n">G4</span>
+                    <span class="stat-l">École<br>Lyon</span>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat">
+                    <span class="stat-n">Alt.</span>
+                    <span class="stat-l">Disponible<br>alternance</span>
+                </div>
             </div>
-          </div>
+
+            <div class="about-cards">
+                <div class="acard">
+                    <div class="acard-ico"><i class="fa fa-sitemap"></i></div>
+                    <h4>Réseau Informatique</h4>
+                    <p>Bac Pro SN RISC. Configuration de routeurs, commutateurs, VLANs et protocoles de routage via Cisco Packet Tracer.</p>
+                </div>
+                <div class="acard">
+                    <div class="acard-ico"><i class="fa fa-code"></i></div>
+                    <h4>Développement Web</h4>
+                    <p>Cours, projets et stages m'ont permis d'acquérir les bases du front-end et une logique de programmation solide.</p>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
 
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Á propos de moi</h2>
-            <div class="line-dec"></div>
-            <span>
-Passionné par le développement et la programmation informatique, j'ai choisi d'interrompre mon BTS SIO pour intégrer l'Institut G4 à Lyon, un programme de trois ans exclusivement consacré à la maîtrise des langages, architectures et méthodologies du génie logiciel. Mon ambition : transformer cette expertise en solutions robustes et scalables qui répondent aux besoins les plus exigeants des organisations. </span
-            >
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img class="imagee left" src="assets/images/BDB.webp" alt="" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Réseau Informatique</h4>
-                  <p>
-                   Ayant effectué un Bac Pro SN RISC à Collonges-sous-salève, mon niveau en réseau a bien été solidifié.
-                  </p>
-                  </div>
-                </div>
-              </div>
+    <!-- FORMATION -->
+    <section class="section content-section" id="section2" data-section="section2">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>Formation</h2>
+                <div class="dec"></div>
+                <p>Mon parcours académique et professionnel.</p>
             </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Développement web</h4>
-                  <p>
-                    Avec de l'aide de mes cours et stages j'ai pu acquérir un bon niveau en dévelopement.
-                  </p>
-                  <div class="white-button">
-                  </div>
+
+            <div class="fcard">
+                <img src="assets/images/sv.png" alt="Saint-Vincent de Paul" />
+                <div class="fcard-info">
+                    <h4>Lycée Saint-Vincent de Paul</h4>
+                    <p>Collonges-sous-Salève · Bac Pro SN RISC – Réseaux Informatiques et Systèmes Communicants</p>
+                    <span class="badge">2020 – 2024 · 4 ans</span>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img  class="imagee" src="https://th.bing.com/th/id/R.b858cec9a5d4844267d12a54340ec15d?rik=jN1FdGvzdgOtKA&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2016%2f07%2fWeb-Development-PNG-File.png&ehk=i4kIVngk2ybjKo%2b0WpywQp7iOMjTNxcLVXG%2bTVPycFU%3d&risl=&pid=ImgRaw&r=0" alt="" />
-                </div>
-              </div>
             </div>
-          </div>
+
+            <div class="fcard">
+                <img src="assets/images/sm.png" alt="Saint Michel Annecy" />
+                <div class="fcard-info">
+                    <h4>Lycée Saint Michel</h4>
+                    <p>Annecy · BTS SIO SLAM – Solutions Logicielles et Applications Métiers</p>
+                    <span class="badge">2024 – 2025 · 1 an</span>
+                </div>
+            </div>
+
+            <div class="fcard">
+                <img src="assets/images/IG4.png" alt="Institut G4 Lyon" />
+                <div class="fcard-info">
+                    <h4>Institut G4</h4>
+                    <p>Lyon · Bac+3 Informatique &amp; Management de Projet – développement en alternance</p>
+                    <span class="badge">2025 – en cours</span>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section my-work" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Formation</h2>
-            <div class="line-dec"></div>
-            <span></span>
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img class="imagee" src="assets/images/sv.png" alt="" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>LYCÉE SAINT-VINCENT DE PAUL</h4>
-                  <p>
-                    LYCÉE SAINT-VINCENT DE PAUL |
-                    COLLONGES-SOUS-SALÈVE |
-                    BAC PRO SN RISC (Réseaux) |
-                    2020 - 2024 (4 ans)
-                  </p>
-                  </div>
-                </div>
-              </div>
+    <!-- COMPÉTENCES -->
+    <section class="section content-section" id="section3" data-section="section3">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>Mes compétences</h2>
+                <div class="dec"></div>
             </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>
-                    LYCÉE SAINT MICHEL</h4>
-                  <p>
-                    LYCÉE SAINT MICHEL |
-                    ANNECY |
-                    BTS SIO SLAM (Développement) |
-                    2024 - 2025 (1 an)
-                  <div class="white-button">
-                  </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="first-service-icon service-icon"></div>
+                    <h4>HTML &amp; CSS</h4>
+                    <p>Bases maîtrisées de manière autodidacte et consolidées en stage. Conception d'interfaces claires et intuitives.</p>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="image left">
-                  <img class="imagee" src="assets/images/sm.png" alt=""/>
+                <div class="skill-item">
+                    <div class="second-service-icon service-icon"></div>
+                    <h4>Python, JavaScript, C, C++</h4>
+                    <p>En progression constante. Entraînement régulier pour renforcer la logique algorithmique.</p>
                 </div>
-              </div>
+                <div class="skill-item">
+                    <div class="third-service-icon service-icon"></div>
+                    <h4>Hardware</h4>
+                    <p>À l'aise avec le montage et la maintenance de composants pour optimiser les performances machines.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="fourth-service-icon service-icon"></div>
+                    <h4>Réseau Informatique</h4>
+                    <p>Configuration de routeurs, commutateurs, LAN et VLANs via Cisco Packet Tracer. Routage IP maîtrisé.</p>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="right-image-post">
+    </section>
 
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
+    <!-- RÉALISATIONS -->
+    <section class="section content-section" id="section4" data-section="section4">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>Mes réalisations</h2>
+                <div class="dec"></div>
+                <p>Projets réalisés dans le cadre de mes études et de mon apprentissage personnel.</p>
+            </div>
+
+            <div class="proj-card">
+                <img src="assets/images/vmware.webp" alt="Projet AP" />
+                <div class="proj-card-body">
+                    <h4>Projet Ateliers Professionnels (AP)</h4>
+                    <p>Projet en équipe mettant en pratique développement, réseau et cybersécurité. Environnements virtualisés sous <strong>VMware</strong>.</p>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>INSTITUT G4</h4>
-                  <p>
-Institut G4 | LYON | École de développement informatique | Formation Bac+3 en Informatique, 
-          & Management de Projet en alternance | 2025 - ...
-                  </p>
-                  <img class="imagee" src="assets/images/IG4.png" alt="" />
-                  </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-card-body">
+                    <h4>Site Web – JO &amp; Pierre de Coubertin</h4>
+                    <p>Site informatif sur les Jeux Olympiques. Hébergé sur <strong>AlwaysData</strong>, déployé sur VM locale via <strong>FileZilla</strong>.</p>
                 </div>
-              </div>
             </div>
-          </div>
-      </section>
 
-      <section class="section my-services" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Mes compétences</h2>
-            <div class="line-dec"></div>
-
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>HTML &amp; CSS</h4>
-                <p>
-                  Je maîtrise les bases de ces langages de développement front-end, que j'ai appris de manière autodidacte et consolidés grâce à mon expérience en stage. Cela me permet de concevoir des interfaces web claires et intuitives.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Python, JavaScript, C, C++</h4>
-                <p>
-                  Bien que ces langages de programmation demandent encore un investissement important de ma part, je suis déterminé à progresser et à m'entraîner régulièrement pour développer mes compétences et renforcer ma logique de programmation.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Hardware</h4>
-                <p>
-                  Je suis à l'aise avec le montage et le démontage des composants informatiques, une compétence que j'ai développée en pratiquant régulièrement. Cela inclut la gestion et la maintenance du matériel pour optimiser les performances.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Réseau Informatique</h4>
-                <p>
-                  Grâce à des outils comme Cisco Packet Tracer, j'ai appris à configurer des routeurs, commutateurs et réseaux locaux (LAN). Ces manipulations m'ont permis de maîtriser des concepts clés comme le routage, les adresses IP et les VLAN.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <section class="section my-projects" data-section="section4">
-      <div class="container">
-          <div class="section-heading">
-              <h2>Mes réalisations</h2>
-              <div class="line-dec"></div>
-              <span>
-                  Voici quelques projets que j'ai réalisés dans le cadre de mes études et de mon apprentissage personnel.
-              </span>
-          </div>
-  
-          <div class="left-image-post">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="left-image">
-                          <img class="imagee" src="assets/images/vmware.webp" alt="Projet AP" />
-                      </div>
-                  </div>
-                  <br>
-                  <div class="col-md-6">
-                      <div class="right-text">
-                          <h4>Projet Ateliers Professionnels (AP)</h4>
-                          <p>
-                              Réalisation d'un projet en équipe pour mettre en pratique les compétences acquises en développement, réseau et cybersécurité.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <div class="right-image-post">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="left-text">
-                          <h4>Site Web sur les JO et Pierre de Coubertin</h4>
-                          <p>
-                              Création d'un site web informatif sur les Jeux Olympiques et Pierre de Coubertin, avec une mise en avant des valeurs olympiques et de leur histoire.
-                          </p>
-                          <p>
-                              Ce projet a été hébergé sur **AlwaysData** et également déployé sur une VM locale à l'aide de **FileZilla** pour la gestion des fichiers.
-                          </p>
-                      </div>
-                  </div>
-                  <br>
-                  <div class="col-md-6">
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <br>
-  
-          <div class="left-image-post">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="left-image">
-                          <img class="imagee" src="assets/images/AD.png" alt="Hébergement AlwaysData" />
-                      </div>
-                  </div>
-                  <br>
-                  <div class="col-md-6">
-                      <div class="right-text">
-                          <h4>Hébergement sur AlwaysData et VM locale</h4>
-                          <p>
-                              Mise en ligne du site sur **AlwaysData**, configuration du domaine et gestion des fichiers avec **FileZilla**.
-                          </p>
-                          <p>
-                              Installation d'un serveur web sur une VM locale pour tester et déployer le site en environnement sécurisé avant la mise en production.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Nouvelle section avec fenêtre intégrée -->
-          <div class="iframe-container">
-            <div class="iframe-wrapper">
-              <div class="iframe-header">
-                <h3 class="iframe-title">Site Musée</h3>
-                <div class="iframe-controls">
+            <div class="proj-card">
+                <img src="assets/images/AD.png" alt="AlwaysData" />
+                <div class="proj-card-body">
+                    <h4>Hébergement AlwaysData &amp; VM locale</h4>
+                    <p>Configuration du domaine, gestion des fichiers avec <strong>FileZilla</strong>, serveur web local pour test avant mise en production.</p>
                 </div>
-              </div>
-              
-              <div class="iframe-tabs">
-                <button class="tab-btn active" onclick="changeProject('SiteMusee/index.html', 'Site Musée')">Site Musée</button>
-              </div>
-              
-              <div style="position: relative;">
-                <div class="loading-indicator" id="loading">
-                  <div class="spinner"></div>
-                  <p>Chargement...</p>
-                </div>
-                
-                <iframe 
-                  id="projectFrame" 
-                  class="project-iframe" 
-                  src="../SiteMusee/index.html"
-                  onload="hideLoading()"
-                  onerror="showError()">
-                </iframe>
-              </div>
             </div>
-          </div>
-      </div>
-  </section>
 
-
-<section class="section my-work" data-section="section5">
-  <div class="container">
-    <div class="section-heading">
-      <h2>Mes hobbies</h2>
-      <div class="line-dec"></div>
-      <span>
-        Mes loisirs développent des qualités utiles dans ma vie professionnelle.
-      </span>
-    </div>
-
-    <div class="row">
-      <!-- Parkour -->
-    <div class="col-md-6">
-      <div class="service-item hobby-parkour">
-        <h4>Parkour</h4>
-        <p>
-          Le parkour développe l'agilité, la prise de décision rapide et la créativité dans la recherche d'itinéraires. 
-          <p><strong>Atout pour l'entreprise :</strong> capacité à résoudre des problèmes de manière inventive, rapidité d'adaptation et sang-froid dans les situations imprévues.
-        </p>
-      </div>
-    </div>
-
-      <!-- Cliff Jumping -->
-      <div class="col-md-6">
-        <div class="service-item hobby-cliff">
-          <h4>Cliff Jumping</h4>
-          <p>
-            Sport extrême qui m'aide à dépasser mes limites et à prendre des décisions rapides.  
-            <p><strong>Atout :</strong> Esprit d'initiative et aisance à sortir de ma zone de confort.</p>
-          </p>
+            <div class="iframe-container">
+                <div class="iframe-wrapper">
+                    <div class="iframe-header">
+                        <h3 class="iframe-title">Site Musée</h3>
+                        <div class="iframe-controls">
+                            <div class="control-btn close"    onclick="closeIframe()"></div>
+                            <div class="control-btn minimize" onclick="minimizeIframe()"></div>
+                            <div class="control-btn maximize" onclick="openFullscreen()"></div>
+                        </div>
+                    </div>
+                    <div class="iframe-tabs">
+                        <button class="tab-btn active" onclick="changeProject('SiteMusee/index.html','Site Musée',this)">🏛️ Site Musée</button>
+                    </div>
+                    <div style="position:relative;">
+                        <div class="loading-indicator" id="loading">
+                            <div class="spinner"></div>
+                            <p style="font-size:13px;color:#aaa;margin:0;">Chargement…</p>
+                        </div>
+                        <iframe id="projectFrame" class="project-iframe"
+                                src="SiteMusee/index.html"
+                                onload="hideLoading()" onerror="showError()"
+                                title="Aperçu Site Musée"></iframe>
+                    </div>
+                    <div class="project-description">
+                        <p id="projectDescription">Site web du musée avec présentation des collections et informations pratiques.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Randonnée -->
-      <div class="col-md-6">
-        <div class="service-item hobby-rando">
-          <h4>Randonnée</h4>
-          <p>
-            Activité qui développe patience, endurance et observation.  
-            <p><strong>Atout :</strong>Travailler sur des projets de longue durée avec régularité.</p>
-          </p>
+    <!-- HOBBIES -->
+    <section class="section content-section" id="section5" data-section="section5">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>Mes hobbies</h2>
+                <div class="dec"></div>
+                <p>Des activités qui développent des qualités directement utiles en entreprise.</p>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-card hobby-parkour">
+                    <div class="hobby-card-body">
+                        <h4>🏃 Parkour</h4>
+                        <p>Agilité, décision rapide. <strong>Atout :</strong> résoudre des problèmes de manière inventive.</p>
+                    </div>
+                </div>
+                <div class="hobby-card hobby-cliff">
+                    <div class="hobby-card-body">
+                        <h4>🌊 Cliff Jumping</h4>
+                        <p>Dépasser ses limites. <strong>Atout :</strong> esprit d'initiative, zone de confort élastique.</p>
+                    </div>
+                </div>
+                <div class="hobby-card hobby-rando">
+                    <div class="hobby-card-body">
+                        <h4>🥾 Randonnée</h4>
+                        <p>Patience et endurance. <strong>Atout :</strong> régularité sur les projets longs.</p>
+                    </div>
+                </div>
+                <div class="hobby-card hobby-musique">
+                    <div class="hobby-card-body">
+                        <h4>🎵 Musique</h4>
+                        <p>Créativité et rythme. <strong>Atout :</strong> solutions originales et travail méthodique.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Musique -->
-      <div class="col-md-6">
-        <div class="service-item hobby-musique">
-          <h4>Musique</h4>
-          <p>
-            La musique m'apporte créativité et sens du rythme.  
-            <p><strong>Atout :</strong> Trouver des solutions originales aux problèmes.
-          </p></p>
+    <!-- CV -->
+    <section class="section content-section" id="section6" data-section="section6">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>CV</h2>
+                <div class="dec"></div>
+                <p>Prévisualisez mon CV avant de le télécharger.</p>
+            </div>
+            <div class="cv-preview">
+                <iframe src="assets/images/Evan_Gourmaud.pdf" title="CV Evan Gourmaud"></iframe>
+            </div>
+            <div style="text-align:center;">
+                <a href="assets/images/Evan_Gourmaud.pdf" download class="cv-dl-btn">
+                    <i class="fa fa-download"></i> Télécharger mon CV
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-  
-  <section class="section my-services" data-section="section6">
-    <div class="container">
-      <div class="section-heading">
-        <h2>CV</h2>
-        <div class="line-dec"></div>
-        <span>Prévisualisez mon CV avant de le télécharger :</span>
-      </div>
-  
-     <!--Aperçu du CV en PDF -->
-      <div style="text-align: center;">
-        <iframe src="assets/images/Evan_Gourmaud.pdf" width="100%" height="600px" style="border:1px solid #ccc; border-radius: 10px;"></iframe>
-      </div>
-      <br>
-    
-      <!-- Bouton de téléchargement -->
-      <div class="cv-download" style="text-align: center;">
-        <button>
-          <a href="assets/images/Evan_Gourmaud.pdf" download>
-            Télécharger mon CV
-          </a>
-        </button>
-      </div>
-      <br><br>
-    </div>
-  </section>
- 
-
-      <section class="section contact-me" data-section="section7">
-        <div class="container">
-          <div class="left-image">
-            <h2>Contactez-moi</h2>
-          </div>
-          <div class="line-dec">
-            <p>
-              Vous pouvez me contacter sur mon adresse email ci joint :
-            </p>
-          </div>
-
-          <br>
+    <!-- CONTACT -->
+    <section class="section content-section" id="section7" data-section="section7">
+        <div class="inner">
+            <div class="sec-head">
+                <h2>Contactez-moi</h2>
+                <div class="dec"></div>
+            </div>
+            <div class="contact-wrap">
+                <p>Disponible pour une alternance ou un stage. N'hésitez pas à me contacter.</p>
+                <a class="contact-btn" href="/cdn-cgi/l/email-protection#9ff8f0eaedf2feeafbb1fae9fef1dff8f2fef6f3b1fcf0f2">
+                    <i class="fa fa-envelope"></i> M'écrire un email
+                </a>
+            </div>
         </div>
-          <button class="ici">
-              <a class="icia" href="mailto:gourmaud.evan@gmail.com">ici</a>
-          </button>
-      </section>
+    </section>
 
+</div><!-- #main-content -->
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ═══ SCRIPTS ═══ -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
+<script>
+    /* SCROLL PROGRESS */
+    window.addEventListener('scroll', () => {
+        const p = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+        document.getElementById('scroll-progress').style.width = p + '%';
+    });
 
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
+    /* ACTIVE NAV */
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            const id = e.target.getAttribute('data-section');
+            document.querySelectorAll('.nav-links li, #nav-drawer ul li').forEach(li => {
+                const a = li.querySelector('a');
+                li.classList.toggle('active', a && a.getAttribute('href') === '#' + id);
+            });
         });
-      };
+    }, { rootMargin: '-40% 0px -40% 0px' });
 
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
+    document.querySelectorAll('[data-section]').forEach(s => observer.observe(s));
 
-      $(window).scroll(function() {
-        checkSection();
-      });
-
-      function toggleTheme() {
-            document.body.classList.toggle("dark-mode");
-            let mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
-            localStorage.setItem("theme", mode);
-        }
-        
-        document.addEventListener("DOMContentLoaded", () => {
-            if (localStorage.getItem("theme") === "dark") {
-                document.body.classList.add("dark-mode");
-            }
+    /* SMOOTH SCROLL */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const t = document.querySelector(a.getAttribute('href'));
+            if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); closeDrawer(); }
         });
-    </script>
+    });
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-    const themeButton = document.getElementById("theme-btn");
-    const body = document.body;
-    let currentTheme = localStorage.getItem("theme") || "light";
+    /* MOBILE DRAWER */
+    function toggleDrawer() { document.getElementById('nav-drawer').classList.toggle('open'); }
+    function closeDrawer()  { document.getElementById('nav-drawer').classList.remove('open'); }
 
-    // Appliquer le bon thème au chargement
-    if (currentTheme === "dark") {
-        body.classList.add("dark-mode");
-        themeButton.textContent = "Mode clair";
-    } else {
-        body.classList.remove("dark-mode");
-        themeButton.textContent = "Mode sombre";
+    /* THEME */
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('theme-btn');
+        let theme = localStorage.getItem('theme') || 'dark';
+
+        function apply(t) {
+            document.body.classList.toggle('light-mode', t === 'light');
+            btn.textContent = t === 'light' ? '🌙 Sombre' : '☀️ Clair';
+            localStorage.setItem('theme', t);
+        }
+
+        apply(theme);
+        btn.addEventListener('click', () => { theme = document.body.classList.contains('light-mode') ? 'dark' : 'light'; apply(theme); });
+    });
+
+    /* IFRAME */
+    const projDesc = { 'SiteMusee/index.html': 'Site web du musée avec présentation des collections et informations pratiques.' };
+
+    function changeProject(url, title, btn) {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+        showLoading();
+        document.getElementById('projectFrame').src = url;
+        const d = document.getElementById('projectDescription');
+        if (d) d.textContent = projDesc[url] || '';
+        const t = document.querySelector('.iframe-title');
+        if (t) t.textContent = title || 'Aperçu';
     }
 
-    themeButton.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        let mode = body.classList.contains("dark-mode") ? "dark" : "light";
-        localStorage.setItem("theme", mode);
-        themeButton.textContent = mode === "dark" ? "Mode clair" : "Mode sombre";
-    });
-});
-    </script>
+    function showLoading()  { document.getElementById('loading').style.display = 'block'; document.getElementById('projectFrame').style.opacity = '.4'; }
+    function hideLoading()  { document.getElementById('loading').style.display = 'none';  document.getElementById('projectFrame').style.opacity = '1'; }
+    function showError()    { const l = document.getElementById('loading'); if (l) { l.innerHTML = '<p style="color:#f87;padding:10px">⚠️ Erreur</p>'; setTimeout(hideLoading, 2500); } }
 
-    <script>
-      // Variables pour la gestion des projets
-      let currentProjectUrl = 'Site%20Musee/index.html';
-      let isMinimized = false;
-      
-      const projectDescriptions = {
-          'Site%20Musee/index.html': 'Site web du musée avec présentation des collections et informations pratiques'
-      };
-
-      function changeProject(url, title) {
-          currentProjectUrl = url;
-          showLoading();
-          
-          // Update active tab
-          document.querySelectorAll('.tab-btn').forEach(btn => {
-              btn.classList.remove('active');
-          });
-          
-          event.target.classList.add('active');
-          
-          // Update iframe source
-          const iframe = document.getElementById('projectFrame');
-          iframe.src = url;
-          
-          // Update description
-          document.getElementById('projectDescription').textContent = projectDescriptions[url] || 'Description du projet';
-          
-          // Update title
-          document.querySelector('.iframe-title').textContent = title || 'Aperçu de mes projets';
-      }
-
-      function showLoading() {
-          document.getElementById('loading').style.display = 'block';
-          document.getElementById('projectFrame').style.opacity = '0.5';
-      }
-
-      function hideLoading() {
-          document.getElementById('loading').style.display = 'none';
-          document.getElementById('projectFrame').style.opacity = '1';
-      }
-
-      function showError() {
-          document.getElementById('loading').innerHTML = '<p style="color: red;">Erreur de chargement</p>';
-          setTimeout(() => {
-              hideLoading();
-          }, 2000);
-      }
-
-      function openFullscreen() {
-          const iframe = document.getElementById('projectFrame');
-          if (iframe.requestFullscreen) {
-              iframe.requestFullscreen();
-          } else if (iframe.webkitRequestFullscreen) {
-              iframe.webkitRequestFullscreen();
-          } else if (iframe.msRequestFullscreen) {
-              iframe.msRequestFullscreen();
-          } else if (iframe.mozRequestFullScreen) {
-              iframe.mozRequestFullScreen();
-          }
-      }
-
-      function minimizeIframe() {
-          const container = document.querySelector('.iframe-container');
-          const iframe = document.getElementById('projectFrame');
-          
-          if (!isMinimized) {
-              iframe.style.height = '0px';
-              container.style.opacity = '0.7';
-              isMinimized = true;
-          } else {
-              iframe.style.height = '600px';
-              container.style.opacity = '1';
-              isMinimized = false;
-          }
-      }
-
-      function closeIframe() {
-          const container = document.querySelector('.iframe-container');
-          container.style.display = 'none';
-      }
-
-      // Initialisation au chargement de la page
-      document.addEventListener('DOMContentLoaded', function() {
-          // Charger le projet par défaut
-          document.getElementById('projectDescription').textContent = projectDescriptions['Site%20Musee/index.html'];
-          document.querySelector('.iframe-title').textContent = 'Site Musée';
-      });
+    let minimized = false;
+    function minimizeIframe() { const f = document.getElementById('projectFrame'); minimized = !minimized; f.style.height = minimized ? '0' : '560px'; }
+    function openFullscreen()  { const f = document.getElementById('projectFrame'); (f.requestFullscreen||f.webkitRequestFullscreen||f.mozRequestFullScreen||(() => {})).call(f); }
+    function closeIframe()     { const c = document.querySelector('.iframe-container'); if (c) c.style.display = 'none'; }
+</script>
+</body>
+</html>
