@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Site JO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/tooplate-vertex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/js/script.js"></script>
+    
+
+</head>
+<body>
+    
+ 
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <!-- Site logo -->
+    <h1 class="tm-brand">
+        <img src="img/gallery/tn/imagejo.png">
+        <span class="tm-brand-text">L'histoire des JO</span>        
+    </h1>
+
+    <!-- Nav -->
+    <nav class="tm-nav">
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="tm-main-nav">
+            <li class="nav-item">                                
+                <a href="#intro" class="nav-link current">
+                    Introduction
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#gallery" class="nav-link">
+                    Galerie
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#LDC" class="nav-link">
+                    Note du commissaire
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#video" class="nav-link">
+                    Résumé vidéo "Pierre de coubertin"
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#tarif" class="nav-link">
+                    Tarif
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main>
+        <div id="intro" class="tm-section">
+            <!-- Intro left -->
+            <div class="tm-section-col tm-content">
+                <div class="tm-media">
+                    <img src="img/gallery/PDC.jpeg" alt="Intro image">
+                    <div class="tm-media-body">
+                        <h2><a href="#" class="tm-text-primary">Pierre de Coubertin</a></h2>
+                        <p class="tm-mb-20 tm-text-small">
+                            Pierre de Coubertin, né Charles Pierre Fredy de Coubertin le 1ᵉʳ janvier 1863 à Paris et mort le 2 septembre 1937 à Genève en Suisse, est un historien et pédagogue français fortement influencé par la culture anglo-saxonne.
+                        </p>
+                        <a class="tm-text-secondary tm-media-span tm-text-small" href="https://fr.wikipedia.org/wiki/Pierre_de_Coubertin">
+                          Wikipédia
+                        </a>
+                        <hr class="tm-hr tm-mr">
+                    </div>
+                </div>
+    
+                <div class="tm-media">
+                    <img src="img/gallery/tn/LJO.jpg" alt="Intro image">
+                    <div class="tm-media-body">
+                        <h2><a href="#" class="tm-text-primary">Les jeux olympiques</a></h2>
+                        <p class="tm-mb-20 tm-text-small">
+                            Les Jeux olympiques (JO), aussi appelés Jeux olympiques modernes, puisqu'ils prolongent la tradition des jeux olympiques de la Grèce antique, sont des événements sportifs internationaux majeurs, regroupant les sports d’été ou d’hiver, auxquels des milliers d’athlètes participent à travers différentes compétitions tous les quatre ans, pour chaque olympiade moderne. <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent"></a></p>
+                        <a class="tm-text-secondary tm-media-span tm-text-small" href="https://fr.wikipedia.org/wiki/Jeux_olympiques">
+                            Wikipédia
+                        </a>
+                        <hr class="tm-hr tm-mr">
+                    </div>
+                </div>
+                
+                <div class="tm-media">
+                    <img src="img/gallery/tn/sitejo.png" alt="Intro image">
+                    <div class="tm-media-body">
+                        <h2><a href="#" class="tm-text-primary">Le site des JO Paris</a></h2>
+                        <p class="tm-mb-20 tm-text-small">
+                           <a href="https://olympics.com/fr/paris-2024">Clique-ici</a>
+                        </p>
+                        <span class="tm-text-secondary tm-media-span tm-text-small">
+                        </span>
+                        <hr class="tm-hr tm-mr">
+                    </div>
+                </div>  
+                
+            </div>
+            
+
+
+
+            
+            <!-- Intro right -->
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="\img\toureiffel.jpg"></div>
+        </div> <!-- #intro -->
+
+
+        
+        <div id="gallery" class="tm-content tm-content-small-top">
+
+            <body class="bg-gray-100">
+                <div id="gallery" class="p-4">
+                    <h2 class="tm-text-primary tm-text-right tm-gallery-header text-2xl font-bold text-gray-800 mb-4">Galerie</h2>
+                    <div class="tm-gallery tm-mb-80 grid grid-cols-5 gap-4" id="image-container"></div>
+                </div>
+
+                  
+                </div>
+                <div class="tm-paging tm-mb-130"></div>
+            </div>
+        </div>
+
+
+        <style>
+            .d {
+
+                line-height: 1.8;
+                margin: 0;
+                padding: 20px;
+                background-color: #f4f4f4;
+            }
+    
+            .a {
+                font-family: 'Brush Script MT', cursive;
+                font-size: 36px;
+                color: #000;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+    
+            .a {
+                font-size: 18px;
+                color: #000;
+                margin-bottom: 30px;
+            }
+    
+            .signature {
+                font-style: italic;
+                font-size: 16px;
+                color: #333;
+            }
+    
+            .sio {
+                font-size: 14px;
+                text-align: right;
+                color: #333;
+                margin-top: 40px;
+            }
+            .yt {
+                text-align: center;
+            }
+
+/* Styles pour le popup */
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.cookie-popup.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cookie-popup-content {
+  text-align: center;
+  max-width: 500px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cookie-buttons {
+  margin-top: 15px;
+}
+
+.cookie-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-button:hover {
+  background-color: #45a049;
+}
+.titre {
+    border-top: 30px;
+    border-bottom: 30px;
+}
+        </style>
+
+            <!-- Intro right -->
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="\img\toureiffel.jpg"></div>
+        </div> <!-- #intro -->
+
+        <div id="LDC" class="d">
+
+            <h1 class="a">NOTE DU COMMISSAIRE</h1>
+            <p class="a">Evian, le 02 Septembre 2024</p>
+        
+            <p class="a">Lorsque le directeur du Musée, m'a fait cette demande, particulière je l'avoue, d'une exposition au nom de « L'OLYMPISE, 32 jours avec Pierre de Coubertin : grandeur et mystères du père des JO modernes ». <br> je me suis demandé pourquoi ? Non pas pourquoi moi, excuser mon impertinence, mais, pourquoi 32 ?</p>
+        
+            <p class="a">Hasard du calendrier ?</p>
+        
+            <p class="a">Appel déjà à la France et donc à l'origine de Pierre de Coubertin ?</p>
+        
+            <p class="a">Ce trait d'humour d'ailleurs, quand il est croqué, apprécié de l'homme. On peut-être et, tout simplement, le début porté - bonhomme et musée et sympathie alors tout est fait pour offrir à chacun une passe temporelle et artistique ? Mais, après tout, pourquoi pas...</p>
+        
+            <p class="a">Pierre disait : « L'Olympisme n'est point un système, c'est un état d'esprit. Les formules les plus diverses sont bonnes pourvoyant qu'il s'agisse d'un idéal applicable à un monde époque et de contribuer le monopole inclusively.</p>
+        
+            <p class="a">En me mettant au travail je me suis, tout d'abord, laissé emporter par mes émotions et associées à Pierre de Coubertin, elles ne manquent pas.</p>
+        
+            <p class="a">Permettez-moi donc conseils pour cette exposition : tout d'abord, laissez vos cœurs et vos émotions couler comme font chaque lieu à l'imagination d'un autre, laissez votre foi et votre confiance dans la joie de ce prendre les couleurs.</p>
+
+            <div class="sio">Pablo Vitorio, commissaire à l'exposition « L'OLYMPISE, 32 jours avec Pierre de Coubertin »</div>
+
+            <p class="a">AP 1 Evian, le 02 Septembre 2024
+                Thomas Bach, Le président du CIO(Comité International Olympique) en
+                hommage à Pierre de Coubertin, déclarait, le 23 juin 2024 à l'université de la
+                Sorbonne : « On n’est pas là pour glorier l’homme, mais pour comprendre le
+                personnage ». Pensez-y durant l’exposition.
+                C’est à ce voyage dans le quotidien, faussement banal, que vous convie cette
+                exposition. Laissez votre moi cartésien au vestiaire, pour faire émerger votre âme
+                d’enfant, votre sens de la dérision. Mais, en même temps, gardez bien
+                précieusement votre sens du questionnement en éveil. Celui qui vous fait sortir de
+                votre zone de confort, celui qui vous permet d’appréhender une situation sous un
+                angle qui n’est pas forcément celui de la bienséance ou celui attendu.
+                Bref laissez-vous happer par l’univers de cet homme qui a croqué la vie avec une
+                ferveur indéniable, il était un idéaliste de l'excellence sportive et de l'unité
+                internationale, malgré une n de vie dans la solitude et la pauvreté, par ce
+                travailleur infatigable et... puissions-nous nous y retrouver.
+                Au plaisir de vous rencontrer tous nombreux…
+                Pablo Voltany,
+                commissaire exposition « L’OLYMPISME, 32 jours avec Pierre de Coubertin : grandeur et mystères du père des JO modernes »
+                Exposition temporaire au Palais Lumière d’Evian-Les-Bains du 2 janvier au 2 février 2025</p>
+        
+         <div class="sio"> commissaire exposition « L’OLYMPISME, 32 jours avec Pierre de Coubertin : grandeur et mystères du père des JO modernes »
+            Exposition temporaire au Palais Lumière d’Evian-Les-Bains du 2 janvier au 2 février 2025</div>   
+            
+        </div>
+
+       
+        <div id="video">
+            <div class="tm-section-col tm-content tm-parallax" data-parallax="scroll" data-image-src="img\toureiffel.jpg"></div>
+            <h2 class="tm-text-primary titre">Résumé vidéo "Pierre de coubertin"</h2>
+        <iframe width="500px" height="100%" class="yt" src="https://www.youtube.com/embed/ZYhEk89C3Jc" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>
+            Le documentaire "Pierre de Coubertin : Grandeur et mystères du père des JO" dévoile les multiples facettes de ce visionnaire. En modernisant les Jeux Olympiques en 1896, il a marqué l'histoire du sport mondial. 
+        </p>
+        <p>
+            Toutefois, sa vie est également empreinte de contradictions : vision humaniste mêlée à des idées conservatrices, et une quête d’universalité parfois limitée par son contexte social et politique.
+        </p>
+        <hr class="tm-hr tm-mb-50">                
+
+        Stéphane Bern explore ces aspects, entre héritage glorieux et zones d'ombre, offrant un portrait nuancé de cet homme clé du sport​
+
+
+        </p>
+        </div>
+       <div id="tarif" class="tm-section">
+            <div class="tm-section-col tm-content tm-content-small tm-parallax">
+                
+                <h2 class="tm-text-primary">Tarif palais des lumières</h2>
+                <p>
+                    Plein tarif : 8,50 €
+                </p>
+                <p>
+                    Tarif réduit : 6,50 € (pour les étudiants, personnes âgées ou autres bénéficiaires de réduction selon les conditions)
+                </p>
+                <hr class="tm-hr tm-mb-50">                
+
+                    Gratuit pour les moins de 16 ans​
+
+                </p>
+
+                <div id="maps">
+                    <h2 class="tm-text-primary">Localisation du palais des lumières</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.193895931452!2d6.585214276665771!3d46.401080871032796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478da9c31a928aa5%3A0x9fd5b16b4e5a8880!2sQuai%20Charles-Albert%20Besson%2C%2074500%20%C3%89vian-les-Bains%2C%20France!5e0!3m2!1sen!2sfr!4v1697465790217!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+        <div id="contact" class="tm-section">
+            <footer class="tm-copyright tm-text-small bg-white">
+                <br>
+                    <a>Evan Gourmaud</a> 
+            </footer>
+        </div>
+            </div>
+            
+        
+    
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img\toureiffel.jpg"></div>
+        </div>
+
+        
+
+            
+            
+            
+
+            <div class="tm-section-col tm-parallax tm-relative" data-parallax="scroll" data-image-src="img\gallery\tn\LJO.jpg">
+
+                <div class="mapouter">
+                    <div class="gmap-canvas">
+                </div>
+            </div>
+        </div> <!-- #contact -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-85ef39fc-0e9a-43d9-8708-9e36d6f25b21" data-elfsight-app-lazy></div>
+
+
+    </main>
+
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+
+        $(function(){
+            
+            /*************** Navigation *****************/
+
+            const tmMainNav = $("#tm-main-nav");
+
+            tmMainNav.singlePageNav({
+                filter: ':not(.external)'
+            });
+
+            $('.navbar-toggler').click(function(e) {
+                e.stopPropagation();
+                tmMainNav.toggleClass('show');
+            });
+
+            $("html").click(function(e) {
+                $("#tm-main-nav").removeClass("show");
+            });
+
+            /****************** Smooth Scrolling *****************/
+
+            $(".tm-btn-next").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        // window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('.tm-brand-icon').on('click', function(event) {
+                $('html, body').animate({
+                        scrollTop: $('#intro').offset().top
+                    }, 800);
+            });
+
+
+
+            /****************** Magnific Popup ***********/
+
+            $('.tm-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+
+
+// Hide popup after acceptance
+if (cookieAccepted) {
+  cookieConsentPopup.classList.add('hidden');
+}
+       
+    </script>
+</body>
+</html>
+
+<script>
+    const images = [
+        { src: "img/Image_JO/bmx.jpg", full: "img/Image_JO/bmx.jpg", title: "BMX", desc: "Vue d'un terrain de BMX en pleine action."},
+        { src: "img/Image_JO/bmx1.jpg", full: "img/Image_JO/bmx1.jpg", title: "BMX", desc: "Un cycliste prêt à exécuter une figure sur son BMX." },
+        { src: "img/Image_JO/box.jpg", full: "img/Image_JO/box.jpg", title: "Boxe", desc: "Un ring de boxe animé par un match intense." },
+        { src: "img/Image_JO/box1.jpg", full: "img/Image_JO/box1.jpg", title: "Boxe", desc: " Un combattant déterminé sur le ring de boxe." },
+        { src: "img/Image_JO/tenis1.jpg", full: "img/Image_JO/tenis1.jpg", title: "Tennis", desc: "Une raquette et un terrain de tennis sous le soleil." },
+        { src: "img/Image_JO/courir.jpg", full: "img/Image_JO/courir.jpg", title: "Course", desc: "Un coureur en pleine vitesse sur une piste d'athlétisme." },
+        { src: "img/Image_JO/courir1.jpg", full: "img/Image_JO/courir1.jpg", title: "Course", desc: "Une ligne de départ prête à accueillir des coureurs." },
+        { src: "img/Image_JO/danse.jpg", full: "img/Image_JO/danse.jpg", title: "Danse", desc: "Une représentation artistique dans une salle de danse." },
+        { src: "img/Image_JO/image1.jpg", full: "img/Image_JO/image1.jpg", title: "Champion", desc: "Un athlète célébrant sa victoire avec un sourire." },
+        { src: "img/Image_JO/Image2.jpg", full: "img/Image_JO/Image2.jpg", title: "Champion", desc: "Un podium brillant et une médaille d'or autour du cou." },
+        { src: "img/Image_JO/Image3.jpg", full: "img/Image_JO/Image3.jpg", title: "Teddy Riner", desc: "Une figure emblématique du judo montrant sa puissance." },
+        { src: "img/Image_JO/Image4.jpg", full: "img/Image_JO/Image4.jpg", title: "Tour Eiffel", desc: "La majestueuse Tour Eiffel illuminée de couleurs." },
+        { src: "img/Image_JO/Image5.jpg", full: "img/Image_JO/Image5.jpg", title: "Bleu Blanc Rouge", desc: "Un hommage au drapeau tricolore de la France." },
+        { src: "img/Image_JO/Image6.jpg", full: "img/Image_JO/Image6.jpg", title: "Tour Eiffel", desc: "Une vue panoramique de la Tour Eiffel au crépuscule." },
+        { src: "img/Image_JO/Image7.jpg", full: "img/Image_JO/Image7.jpg", title: "Paris", desc: "Les rues animées de Paris avec une vue emblématique." },
+        { src: "img/Image_JO/Image8.jpg", full: "img/Image_JO/Image8.jpg", title: "Espace", desc: "Une scène cosmique évoquant la grandeur de l'espace." },
+        { src: "img/Image_JO/Image9.jpg", full: "img/Image_JO/Image9.jpg", title: "Drapeau de la France", desc: "Le drapeau français flottant fièrement." },
+        { src: "img/Image_JO/Image10.jpg", full: "img/Image_JO/Image10.jpg", title: "C'est la fête", desc: " Une célébration animée avec des feux d'artifice." },
+        { src: "img/Image_JO/Image11.jpg", full: "img/Image_JO/Image11.jpg", title: "Plein de pays différent", desc: "Une collection de drapeaux internationaux." },
+        { src: "img/Image_JO/Image12.jpg", full: "img/Image_JO/Image12.jpg", title: "Le festival", desc: "Une scène de festival vibrante et festive." },
+        { src: "img/Image_JO/Image13.jpg", full: "img/Image_JO/Image13.jpg", title: "Le podium", desc: "Les gagnants debout sur le podium, médailles autour du cou." },
+        { src: "img/Image_JO/Image14.jpg", full: "img/Image_JO/Image14.jpg", title: "Le champs élysée", desc: " Une vue magnifique de l'avenue des Champs-Élysées." },
+        { src: "img/Image_JO/judo.jpg", full: "img/Image_JO/judo.jpg", title: "Judoka", desc: "Un athlète en tenue de judo prêt à combattre." },
+        { src: "img/Image_JO/tenis.jpg", full: "img/Image_JO/tenis.jpg", title: "Tennis", desc: "Un échange intense sur un court de tennis." },
+    ];
+
+
+    const imageContainer = document.getElementById('image-container');
+
+// Mélanger les images
+function shuffle(array) {
+for (let i = array.length - 1; i > 0; i--) {
+const j = Math.floor(Math.random() * (i + 1));
+[array[i], array[j]] = [array[j], array[i]];
+}
+}
+
+// Fonction pour afficher 10 images au hasard
+function displayImages() {
+shuffle(images);
+const selectedImages = images.slice(0, 10);
+
+// Effacer les images actuelles
+imageContainer.innerHTML = '';
+
+// Ajouter les nouvelles images
+selectedImages.forEach(image => {
+const figure = document.createElement('figure');
+figure.classList.add('relative', 'overflow-hidden', 'rounded-lg', 'bg-white', 'shadow-md');
+
+figure.innerHTML = `
+<img src="${image.src}" alt="${image.title}" class="w-full h-48 object-cover rounded-t-lg"/>
+<figcaption class="p-4 text-center">
+    <h2 class="font-semibold text-lg text-gray-800">${image.title}</h2>
+    <p class="text-sm text-gray-600">${image.desc}</p>
+    <a href="${image.full}" class="text-blue-500 underline text-sm">Voir plus</a>
+</figcaption>
+`;
+imageContainer.appendChild(figure);
+});
+}
+
+// Afficher les images pour la première fois
+displayImages();
+
+// Changer les images toutes les 15 secondes
+setInterval(displayImages, 15000);
+</script>
+
