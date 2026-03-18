@@ -491,10 +491,10 @@
         .hobby-card p  { font-size: 13px !important; color: rgba(255,255,255,.7) !important; line-height: 1.55 !important; margin: 0; }
         .hobby-card strong { color: var(--accent) !important; }
 
-        .hobby-parkour { background-image: url("assets/images/Parkour.jpg"); }
-        .hobby-cliff   { background-image: url("assets/images/cliffj.jpg"); }
-        .hobby-rando   { background-image: url("assets/images/Rando.JPG"); }
-        .hobby-musique { background-image: url("assets/images/music.jpg"); }
+        .hobby-parkour { background-image: url("../images/Parkour.jpg"); }
+        .hobby-cliff   { background-image: url("../images/cliffj.jpg"); }
+        .hobby-rando   { background-image: url("../images/Rando.JPG"); }
+        .hobby-musique { background-image: url("../images/music.jpg"); }
 
         /* Forcer les images dans les cartes à ne pas déborder */
         .fcard img,
